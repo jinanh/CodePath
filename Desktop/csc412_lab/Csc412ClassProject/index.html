@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+<script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("img").src = images[x];
+      }
+      function changeImage() {
+          setInterval(displayNextImage, 2000);
+      }
+
+      var images = [], x = -1;
+      images[0] = "https://ueap.sfsu.edu/sites/default/files/styles/landing_page_tile/public/IMG_6772_0.jpg?itok=MTXcwQ5e";
+      images[1] = "https://cbssanfran.files.wordpress.com/2016/09/sfsu-image.jpg?w=1024&h=576&crop=1";
+      images[2] = "https://upd.sfsu.edu/sites/default/files/assets/images/jpaulleonardlib.jpg";
+  </script>
+
+        <style>
+            div.background{
+               background: url(https://news.sfsu.edu/sites/default/files/SFSU%20sign_main_0.jpg); 
+                border: 2px solid gold;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height:900px;
+            }
+            div.text-center{
+                background:rgba(100,100,100, 0.8);
+            }
+
+            #panel, #flip {
+                padding: 10px;
+                text-align: center;
+                background-color: white;
+
+            }
+
+            #panel {
+                padding: 50px;
+                display: none;
+            }
+            #map{
+                bottom:-8px;
+                margin: auto;
+            }
+      
+            
+            
+                    .center {
+                      display: block;
+                       margin-left: auto;
+                       margin-right: auto;
+                       width: 50%;
+                            }
+            
+.container {
+    left: 100px;
+    bottom:-8px;
+    position: relative;
+    width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+        </style>
+        <title>CSC 412 project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body onload = "changeImage()">
+        
+        <div class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="current.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="visitors.html">Visitor</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="flip"><font size ="4" color ="red">Announcement (click me)</font></div>
+        <div id="panel"><font size="3">Opps no announcement yet<br>Opps no announcement yet<br>Opps no announcement yet</font></div>
+
+
+        <div class="background">
+                        <div><a  href="http://www.sfsu.edu/index.html">
+                    <img src="http://www.sfsu.edu/logo.png" 
+                         alt="logo" width="150" height="150"></a></div>
+            
+            
+
+            <div class="text-center">
+                <h1><font size = "10" color = "purple">San Francisco State University</font></h1>
+                <p class="lead" style="color:gold;">
+                    San Francisco State is ranked the 17th top college in the United States<br>
+                    by PayScale and CollegeNET's Social Mobility Index college rankings.<br>
+                    In 2012 the university was ranked as the 15th best master's-granting<br>
+                    public university in the Western United States by U.S. News & World Report.<br>
+                    U.S. News & World Report also ranked San Francisco State University 1st in<br>
+                    reputation among its "Western University peers" in 2000.Furthermore,<br>
+                    U.S. News & World Report ranks San Francisco State as 8th nationally<br>
+                    in the number of transfer students. San Francisco State University's<br>
+                    joint physical therapy master's program with UCSF is consistently ranked<br>
+                    among the top 20 in the country. The Philosophical Gourmet Report lists<br>
+                    San Francisco State University as one of the top eight universities to<br>
+                    earn a terminal MA in philosophy. The Academy of Management, the leading<br>
+                    professional association for management scholars in the world, honored<br>
+                    San Francisco State University's College of Business' Ohrenschall Center<br>
+                    for Entrepreneurship with the McGraw-Hill/Irwin Innovation in Entrepreneurship<br>
+                    Pedagogy Award (2002). SFSU was one of the first California State University<br>
+                    campuses to offer a doctorate of education. It was also instrumental in the<br>
+                    establishment of the International University of Kyrgyzstan (1993). The<br>
+                    university is the only one in California to offer a bachelor's degree in<br>
+                    technical and professional writing. SFSU ranks 18th among the top 20 undergraduate<br>
+                    schools whose alumni go on to be admitted to the State Bar; many subsequently<br>
+                    run for public office. The University's College of Extended Learning offers the<br>
+                    only American Bar Association-approved paralegal studies program in San Francisco.<br>
+                    The Cinema Department, in the College of Liberal & Creative Arts, was named one<br>
+                    of the nation's top film schools by Entertainment Weekly in 2000. SFSU is also<br>
+                    listed as one of the nation's top 25 film schools by The Hollywood Reporter,<br>
+                    having produced countless leading filmmakers. The Sutro Library, located within<br>
+                    the J. Paul Leonard Library, houses the largest collection of genealogical<br>
+                    records west of Salt Lake City.</p>
+            </div>
+        </div>
+        
+            <img id="img" src="https://upd.sfsu.edu/sites/default/files/assets/images/jpaulleonardlib.jpg" width="500" height="400" class="center">
+           <center> <p><font size="10">Some random pictures</font></p></center>
+    <div id="map" style="width:400px;height:400px;background:yellow"></div>
+    <center><p><font size="10">google map of the campus</font></p></center>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(37.7219055, -122.4793413),
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script id="map" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIKy1sXTtXTNRD5S4J-3vtB3Qdy1_2xaM
+&callback=myMap"></script>
+  
+    
+    
+    
+    
+    
+    <div class="container">
+  <img src="https://cbssanfran.files.wordpress.com/2010/09/sfsu_gators.jpg?w=370" class="image" width="300" height="400">
+  <div class="middle">
+    <div class="text">The school first adopted their mascot,<br>
+                      the Gator, in 1931. After a call for a<br>
+                      mascot by the student newspaper the Bay<br>
+                      Leaf, students suggested the "alligator"<br>
+                      for its strength and steadfastness.</div>
+  </div>
+</div>
+    </bodY>
+</html>

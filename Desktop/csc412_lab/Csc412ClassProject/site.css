@@ -1,0 +1,12 @@
+root { 
+    display: block;
+}
+.centered {
+	text-align: center;
+	color: red;
+	border-color:black;
+	border-style:solid;
+}
+.sansSerif{
+    font-family: sans-serif;
+}
